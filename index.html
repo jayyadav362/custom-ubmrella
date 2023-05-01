@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id='body'>
+    <div class="row">
+        <div class="col logo-col">
+            <img id="umb-img" src="assets/Blue umbrella.png" width="100%">
+            <img id="loader-img">
+            <img id="logo-img">
+        </div>
+        <div class="col">
+            <h1>Custom Umbrella</h1>
+            <div class="color-switch">
+                <button id="blue-switch" class="switch-btn" style="background-color: #1e90ff;border: 5px solid rgb(98, 191, 241);"></button>
+                <button id="pink-switch" class="switch-btn" style="background-color: #ff69b4;"></button>
+                <button id="yellow-switch" class="switch-btn" style="background-color: #ffd700;"></button>
+            </div>
+            <div style="justify-content: start;">
+                <h2>Customize your umbrella</h2>
+                <p>Upload a logo for an instant preview.</p>
+                <span>.png and .jpg files only. Max file size is 5MB.</span>
+            </div>
+            <div class="logo-upload" id="logo-upload">
+                <label for="logo-input" class="upload-btn"><img id="upload-icon" src="assets/upload_icon.svg" style="color: white;"></label>
+                <input id="logo-input" type="file" accept="image/*">
+                <div id="logo-text" style="color: white;">UPLOAD LOGO</div>
+                <button id="remove-logo" onclick="handleRemoveLogo();">X</button>
+            </div>
+        </div>
+    </div>
+<script src="main.js"></script>    
+</body>
+</html>

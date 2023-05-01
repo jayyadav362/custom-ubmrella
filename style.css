@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(230 247 252);
+}
+.row {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2,1fr);
+    height: 100vh;
+}
+.col{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 70%;
+}
+.col> *{
+    justify-self: start;
+}
+#umb-img{
+    aspect-ratio: '1/1';
+    width: 100%;
+    height: 100%;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.color-switch {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.switch-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+    border: none;
+}
+
+.logo-upload {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    padding: 10px;
+    width: 85%;
+}
+
+.upload-btn {
+    cursor: pointer;
+    text-align: left;
+}
+
+#logo-input {
+    display: none;
+}
+#logo-img {
+    position: absolute;
+    bottom: 2rem;
+    left: 43%;
+    height: 50px;
+    width: 70px;
+    display: none;
+}
+#remove-logo{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    display: none;
+}
+#loader-img{
+    position: absolute;
+    left: 45%;
+    height: 4rem;
+    width: 4rem;
+    display: none;
+}
